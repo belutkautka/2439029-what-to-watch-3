@@ -10,7 +10,7 @@ export const Paths = {
   NotFound: () => '*',
 };
 
-export const ApiPaths = {
+export const APIPaths = {
   Films : () => '/films',
   Film: (id: string) => `/films/${id}`,
   Similar: (id: string) => `/films/${id}/similar`,

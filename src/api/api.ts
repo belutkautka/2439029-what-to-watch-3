@@ -1,13 +1,13 @@
 import axios, {AxiosInstance, AxiosRequestConfig} from 'axios';
 import {getToken} from '@components/use-app/use-app.tsx';
 
-const BaseUrl = 'https://13.design.pages.academy/wtw';
-const RequestTimeout = 5000;
+const BASE_URL = 'https://13.design.pages.academy/wtw';
+const REQUEST_TIMEOUT = 5000;
 
 export const createAPI = (): AxiosInstance => {
   const api = axios.create({
-    baseURL: BaseUrl,
-    timeout: RequestTimeout,
+    baseURL: BASE_URL,
+    timeout: REQUEST_TIMEOUT,
   });
   api.interceptors.request.use(
     (config: AxiosRequestConfig) => {
